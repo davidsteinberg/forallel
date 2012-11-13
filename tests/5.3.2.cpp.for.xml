@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.sdml.info/srcML/src">
+
+<unit xmlns:cpp="http://www.sdml.info/srcML/cpp" language="C++" filename="tests/5.3.2.cpp" item="1"><for>for ( <init><decl><type><name>int</name></type> <name>I</name> =<init> <expr>0</expr></init></decl>;</init> <condition><expr><name>I</name> &lt;= 20</expr>;</condition> <incr><expr><name>I</name>++</expr></incr> ) <block>{
+		<expr_stmt><expr><name><name>A</name><index>[<expr>9*<name>I</name>+22</expr>]</index></name> = 1</expr>;</expr_stmt>		<comment type="line">// rhs not set in example</comment>
+		<expr_stmt><expr><name>X</name> = <name><name>A</name><index>[<expr>6*<name>I</name>-17</expr>]</index></name></expr>;</expr_stmt>		<comment type="line">// lhs not set in example</comment>
+	}</block></for></unit>
+
+</unit>
